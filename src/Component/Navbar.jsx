@@ -7,7 +7,7 @@ const Navbar = () => {
   const HandleNavigation = () => setNav(!nav);
   return (
     <div className="w-screen h-[100px] z-10 fixed drop-shadow-sm">
-      <div className="px-8 sm:px-16 flex justify-between w-full h-full">
+      <div className="px-8 sm:px-32 flex justify-between w-full h-full">
         <div className="flex justify-between items-center gap-10">
           <h1 className="text-3xl font-bold sm:text-4xl">SHORTLY</h1>
           <ul className="hidden md:flex font-bold justify-around space-x-2">
@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex font-bold justify-between gap-5 items-center">
           <button>Login</button>
-          <buttton className="bg-[#00FFFF] text-white font-bold px-6 py-3 rounded-3xl">
+          <buttton className="bg-[#00FFFF] text-white font-bold px-7 py-2 rounded-full">
             Sign Up
           </buttton>
         </div>
