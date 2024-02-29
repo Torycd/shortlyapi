@@ -1,8 +1,8 @@
 const Hero = () => {
   return (
     <div className="pt-[100px] h-auto w-screen flex flex-col-reverse md:flex-row ">
-      <div className="ml-8 md:ml-32 my-auto md:w-[70%] flex flex-col gap-5">
-        <h2 className="text-3xl md:text-6xl font-bold">
+      <div className="ml-8 text-center md:text-left md:ml-32 my-auto md:w-[70%] flex flex-col gap-5">
+        <h2 className="text-4xl md:text-6xl font-bold">
           More Than just <br />
           Shorter Links
         </h2>
