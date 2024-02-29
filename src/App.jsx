@@ -1,5 +1,6 @@
 import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero";
+import MainSection from "./Component/MainSection";
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Navbar/>
       <Hero/>
+      <MainSection/>
     </div>
   )
 }

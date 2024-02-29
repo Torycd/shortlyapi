@@ -11,7 +11,7 @@ const Hero = () => {
           insights on how your links are performing.
         </p>
         <div>
-          <button className="bg-[#00FFFF] w-auto text-white font-bold px-7 py-2 rounded-full">
+          <button className="bg-[#00FFFF] w-auto text-white text-2xl font-bold px-9 py-4 rounded-full">
             Get Started
           </button>
         </div>
