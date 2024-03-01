@@ -13,6 +13,7 @@ const Shortly = ({className}) => {
     </div>
   )
 }
+
 Shortly.propTypes = {
   className: PropTypes.string,
 }
