@@ -1,4 +1,5 @@
 import Button from "../UI/Button"
+import PropTypes from 'prop-types';
 
 const Shortly = ({className}) => {
   return (
@@ -12,5 +13,8 @@ const Shortly = ({className}) => {
     </div>
   )
 }
+Shortly.propTypes = {
+  className: PropTypes.string,
+}
 
-export default Shortly
+export default Shortly;
