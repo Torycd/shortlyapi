@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="pt-[100px] w-dvh ml-16 md:ml-32 flex flex-col-reverse md:flex-row md:justify-between overflow-hidden">
+    <div className="pt-[100px] w-dvh md:ml-32 flex flex-col-reverse md:flex-row md:justify-between overflow-hidden">
       <div className=" text-center md:text-left my-auto flex flex-col gap-5">
         <h2 className="text-4xl md:text-6xl font-bold">
           More Than just <br />
