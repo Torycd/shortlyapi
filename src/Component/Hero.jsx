@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
-    <div className="pt-[100px] h-auto w-screen flex flex-col-reverse md:flex-row ">
-      <div className="ml-8 text-center md:text-left md:ml-32 my-auto md:w-[70%] flex flex-col gap-5">
+    <div className="pt-[100px] w-dvh ml-16 md:ml-32 flex flex-col-reverse md:flex-row md:justify-between overflow-hidden">
+      <div className=" text-center md:text-left my-auto flex flex-col gap-5">
         <h2 className="text-4xl md:text-6xl font-bold">
           More Than just <br />
           Shorter Links
@@ -16,7 +16,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="md:-pr-[100px] overflow-hidden">
+      <div className="right-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className=""
