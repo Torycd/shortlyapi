@@ -1,10 +1,7 @@
 import useHttps from "./Use-https";
 
-const ViewComponent = ({ requestData, setResponse }) => {
-  const { data, error } = useHttps(
-    "https://cleanuri.com/api/v1/shorten",
-    requestData
-  );
+const ViewComponent = ({ requestData, setResponse, fetchUrl }) => {
+  const { data, error } = useHttps(fetchUrl, requestData);
 
   if (error) {
     return <div>Error: {error}</div>;

@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-const PROXY_URL = "http://localhost:3001/proxy"; // Update with your proxy server URL
-
 const useHttps = (url, requestData) => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -9,7 +7,7 @@ const useHttps = (url, requestData) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(PROXY_URL, {
+        const response = await fetch(url, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
