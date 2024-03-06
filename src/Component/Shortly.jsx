@@ -30,7 +30,7 @@ const Shortly = ({ className }) => {
           <Button className={className} type="button" onClick={handleFormSubmit}>
             Shorten It!
           </Button>
-          <ViewComponent requestData={requestData} setResponse={setResponse} fetchUrl={fetchUrl} />
+          <ViewComponent requestData={requestData} setResponse={setResponse} fetchUrl />
         </form>
       </div>
     </div>
