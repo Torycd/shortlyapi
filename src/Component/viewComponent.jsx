@@ -1,17 +1,20 @@
+import { useEffect } from "react";
 import useHttps from "./Use-https";
 
-const ViewComponent = ({ requestData, setResponse, fetchUrl }) => {
-  const { data, error } = useHttps(fetchUrl, requestData);
+const ViewComponent = ({ requestData, handleResponse }) => {
+  const { data, error } = useHttps(requestData);
+
+  useEffect(() => {
+    if (data) {
+      handleResponse(data);
+    }
+  }, [data, handleResponse]);
 
   if (error) {
     return <div>Error: {error}</div>;
   }
 
-  if (data) {
-    setResponse(data);
-  }
-
-  return <div>Loading...</div>;
+  return <div>{data ? data : "Loading..."}</div>;
 };
 
 export default ViewComponent;
