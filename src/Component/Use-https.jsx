@@ -24,6 +24,7 @@ const useHttps = (url) => {
 
     fetchData();
   }, [url]);
+  console.log(data)
 
   return { data, error };
 };
