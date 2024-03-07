@@ -14,7 +14,7 @@ const ViewComponent = ({ requestData, handleResponse }) => {
     return <div>Error: {error}</div>;
   }
 
-  return <div>{data ? data : "Loading..."}</div>;
+  return <div>Loading...</div>;
 };
 
 export default ViewComponent;
