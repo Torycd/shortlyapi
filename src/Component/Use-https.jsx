@@ -10,7 +10,7 @@ const useHttps = (url) => {
         const response = await fetch(url, {
           method: "GET",
         });
-
+        console.log(response)
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
