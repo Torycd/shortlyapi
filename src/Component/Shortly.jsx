@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 import ViewComponent from "./ViewComponent";
 
@@ -17,16 +17,16 @@ const Shortly = () => {
     setRequestData({ url: fetchUrl });
   };
 
-  useEffect(() => {
-    if (requestData) {
-      fetch(requestData.url)
-        .then((response) => response.text())
-        .then((data) => {
-          setResponse(data);
-        })
-        .catch((error) => console.error("Error fetching data:", error));
-    }
-  }, [requestData]);
+  // useEffect(() => {
+  //   if (requestData) {
+  //     fetch(requestData.url)
+  //       .then((response) => response.text())
+  //       .then((data) => {
+  //         setResponse(data);
+  //       })
+  //       .catch((error) => console.error("Error fetching data:", error));
+  //   }
+  // }, [requestData]);
 
   const handleResponse = (data) => {
     setResponse(data);
@@ -59,6 +59,7 @@ const Shortly = () => {
           />
         </form>
       </div>
+
     </div>
   );
 };
