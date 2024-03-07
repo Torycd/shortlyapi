@@ -13,8 +13,7 @@ const ViewComponent = ({ requestData, handleResponse }) => {
   if (error) {
     return <div>Error: {error}</div>;
   }
-
-  return <div>Loading...</div>;
+  
 };
 
 export default ViewComponent;
