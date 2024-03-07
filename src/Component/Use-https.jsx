@@ -16,6 +16,7 @@ const useHttps = (url) => {
         }
 
         const result = await response.text();
+        console.log(result)
         setData(result);
       } catch (error) {
         setError(error.message);

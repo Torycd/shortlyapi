@@ -3,6 +3,7 @@ import useHttps from "./Use-https";
 
 const ViewComponent = ({ requestData, handleResponse }) => {
   const { data, error } = useHttps(requestData);
+  console.log(data)
 
   useEffect(() => {
     if (data) {
