@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useHttps = (url, requestData) => {
+const useHttps = (url, longUrl) => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
@@ -10,9 +10,9 @@ const useHttps = (url, requestData) => {
         const response = await fetch(url, {
           method: "POST",
           headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "application/x-www-form-urlencoded",
           },
-          body: JSON.stringify({ url, requestData }),
+          body: `url=${encodeURIComponent(longUrl)}`,
         });
 
         if (!response.ok) {
@@ -27,7 +27,7 @@ const useHttps = (url, requestData) => {
     };
 
     fetchData();
-  }, [url, requestData]);
+  }, [url, longUrl]);
 
   return { data, error };
 };
