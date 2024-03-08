@@ -11,7 +11,17 @@ const ViewComponent = ({ response, error }) => {
     content = error;
   }
 
-  return <div className="text-black">{content}</div>;
+  return (
+    <>
+      {response ? (
+        <div className="text-black bg-white w-dvh px-6 py-8 rounded-lg mx-16 md:mx-32 z-20">
+          {content}
+        </div>
+      ) : (
+        ""
+      )}
+    </>
+  );
 };
 
 export default ViewComponent;
