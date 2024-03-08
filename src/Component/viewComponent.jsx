@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 const ViewComponent = ({ response, error }) => {
-  const [displayedItems, setDisplayedItems] = useState(Object.keys(localStorage));
+  const [displayedItems, setDisplayedItems] = useState(
+    Object.keys(localStorage)
+  );
 
   const handleDelete = (key) => {
     localStorage.removeItem(key);
@@ -14,19 +16,22 @@ const ViewComponent = ({ response, error }) => {
   }, [response]);
 
   return (
-    <>
-      <div>
+    <div className="w-dvh  rounded-lg mx-16 md:mx-32 z-20">
+      <div className="w-full">
         {displayedItems.map((key) => (
           <div
             key={key}
-            className="text-black bg-white w-dvh px-6 py-8 rounded-lg mx-16 md:mx-32 z-20"
+            className="text-black bg-white px-6 py-8 flex flex-col md:flex-row gap-3 md:gap-5"
           >
             <p>{localStorage.getItem(key)}</p>
-            <button onClick={() => handleDelete(key)}>Delete Data</button>
+            <div className="flex justify-between">
+              <button onClick={() => handleDelete(key)}>Delete Data</button>
+              <div>copy</div>
+            </div>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

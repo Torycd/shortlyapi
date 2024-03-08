@@ -16,8 +16,8 @@ const Shortly = () => {
   };
 
   return (
-    <>
-      <div className="-translate-y-1/2 bg-[#421E47] w-dvh px-6 py-8 rounded-lg mx-16 md:mx-32 z-20">
+    <div className="w-dvh">
+      <div className="-translate-y-1/2 bg-[#421E47] px-6 py-8  rounded-lg mx-16 md:mx-32 z-20">
         <div className="w-full">
           <form
             className="flex flex-col md:flex-row gap-3 md:gap-5"
@@ -39,9 +39,10 @@ const Shortly = () => {
             </button>
           </form>
         </div>
+        
       </div>
       <ViewComponent response={response} error={error} />
-    </>
+    </div>
   );
 };
 
