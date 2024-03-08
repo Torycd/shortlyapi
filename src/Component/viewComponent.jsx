@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-const ViewComponent = ({ response, error }) => {
+const ViewComponent = ({ response }) => {
   const [displayedItems, setDisplayedItems] = useState(
     Object.keys(localStorage)
   );
