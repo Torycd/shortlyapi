@@ -18,9 +18,9 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex font-bold justify-between gap-5 items-center">
           <button>Login</button>
-          <buttton className="bg-[#00FFFF] text-white font-bold px-7 py-2 rounded-full">
+          <button className="bg-[#00FFFF] text-white font-bold px-7 py-2 rounded-full">
             Sign Up
-          </buttton>
+          </button>
         </div>
         {/* Button */}
         <div className="flex md:hidden items-center">
