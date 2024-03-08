@@ -1,42 +1,15 @@
 import PropTypes from "prop-types";
-import { useState, useEffect} from "react";
-
-import ViewComponent from "./ViewComponent";
+import { useState } from "react";
+import useHttp from "./Use-https"
 
 const Shortly = () => {
   const [urlInput, setUrlInput] = useState("");
-  const [response, setResponse] = useState(null);
-  const [requestData, setRequestData] = useState(null);
+  const { response, error, fetchData } = useHttp();
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    const fetchUrl = `https://tinyurl.com/api-create.php?url=${encodeURIComponent(
-      urlInput
-    )}`;
-    setResponse(null);
-    setRequestData({ url: fetchUrl });
-  };
-
-  useEffect(() => {
-    const fetchData = async () => {
-        if (requestData) {
-            try {
-                const response = await fetch(requestData.url);
-                const data = await response.text();
-                setResponse(data);
-                console.log(data)
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
-        }
-    };
-
-    fetchData();
-}, [requestData]);
-
-
-  const handleResponse = (data) => {
-    setResponse(data);
+    const fetchUrl = `https://tinyurl.com/api-create.php?url=${encodeURIComponent(urlInput)}`;
+    fetchData(fetchUrl);
   };
 
   return (
@@ -60,13 +33,10 @@ const Shortly = () => {
           >
             Shorten It!
           </button>
-          <ViewComponent
-            requestData={requestData}
-            handleResponse={handleResponse}
-          />
         </form>
       </div>
-
+      {response && <div>{response}</div>}
+      {error && <div>Error: {error}</div>}
     </div>
   );
 };

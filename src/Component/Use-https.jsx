@@ -1,33 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-const useHttps = (url) => {
-  const [data, setData] = useState(null);
+const useHttp = () => {
+  const [response, setResponse] = useState(null);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(url, {
-          method: "GET",
-        });
-        console.log(response)
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
+  const fetchData = async (url) => {
+    try {
+      console.log(url)
+      const response = await fetch(url, {method: "POST"});
+      const data = await response.text();
+      setResponse(data);
+    } catch (error) {
+      setError(error.message);
+    }
+  };
 
-        const result = await response.text();
-        console.log(result)
-        setData(result);
-      } catch (error) {
-        setError(error.message);
-      }
-    };
-
-    fetchData();
-  }, [url]);
-  // console.log(data)
-
-  return { data, error };
+  return { response, error, fetchData };
 };
 
-export default useHttps;
+export default useHttp;
