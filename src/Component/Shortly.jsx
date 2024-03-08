@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import useHttp from "./Use-https";
+import ViewComponent from "./ViewComponent";
 
 const Shortly = () => {
   const [urlInput, setUrlInput] = useState("");
@@ -39,8 +40,7 @@ const Shortly = () => {
           </form>
         </div>
       </div>
-      {response && <div className="text-black">{response}</div>}
-      {error && <div className="text-black">Error: {error}</div>}
+      <ViewComponent response={response} error={error} />
     </>
   );
 };

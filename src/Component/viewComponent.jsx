@@ -1,20 +1,22 @@
-import { useEffect } from "react";
-import useHttps from "./Use-https";
+// import { useEffect } from "react";
+import PropTypes from "prop-types";
 
-const ViewComponent = ({ requestData, handleResponse }) => {
-  const { data, error } = useHttps(requestData);
-  console.log(data)
+const ViewComponent = ({ response, error }) => {
+  let content;
 
-  useEffect(() => {
-    if (data) {
-      handleResponse(data);
-    }
-  }, [data, handleResponse]);
-
-  if (error) {
-    return <div>Error: {error}</div>;
+  if (response) {
+    content = response;
   }
-  
+  if (error) {
+    content = error;
+  }
+
+  return <div className="text-black">{content}</div>;
 };
 
 export default ViewComponent;
+
+ViewComponent.propTypes = {
+  response: PropTypes.string,
+  error: PropTypes.string,
+};
