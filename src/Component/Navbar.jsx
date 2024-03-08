@@ -41,9 +41,9 @@ const Navbar = () => {
           <div className="flex flex-col font-bold justify-between w-full gap-8 items-center mb-5">
           <hr className="bg-white text-white w-[90%] font-bold px-6"/>
             <button>Login</button>
-            <buttton className="bg-[#00FFFF] text-white w-[90%] text-center font-bold px-6 py-3 rounded-3xl">
+            <button className="bg-[#00FFFF] text-white w-[90%] text-center font-bold px-6 py-3 rounded-3xl">
               Sign Up
-            </buttton>
+            </button>
           </div>
         </ul>
       </div>
