@@ -18,7 +18,7 @@ const ViewComponent = ({ response }) => {
   };
 
   useEffect(() => {
-    setDisplayedItems(Object.keys(localStorage)); // Update displayed items when component mounts or when new data is added
+    setDisplayedItems(Object.keys(localStorage));
   }, [response]);
 
   return (
