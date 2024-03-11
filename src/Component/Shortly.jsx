@@ -26,14 +26,14 @@ const Shortly = () => {
           >
             <input
               type="text"
-              className="w-full px-9 py-4 md:h-auto rounded-lg  text-xl bg-white"
+              className="w-full md:w-[85%] px-9 py-4 md:h-auto rounded-lg  text-xl bg-white"
               required
               placeholder="Shorten a link here..."
               value={urlInput}
               onChange={(e) => setUrlInput(e.target.value)}
             />
             <button
-              className="bg-[#00FFFF] w-auto text-white text-xl font-bold px-9 py-4 rounded-lg"
+              className="w-uto md:w-[15%] bg-[#00FFFF]  text-white text-xl font-bold px-9 py-4 rounded-lg"
               type="submit"
             >
               Shorten It!
