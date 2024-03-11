@@ -14,6 +14,7 @@ const Shortly = () => {
       urlInput
     )}`;
     fetchData(fetchUrl);
+    setUrlInput("")
   };
 
   return (
