@@ -1,4 +1,4 @@
-// import PropTypes from "prop-types";
+
 import { useState } from "react";
 import useHttp from "./Use-https";
 import ViewComponent from "./ViewComponent";
@@ -45,8 +45,6 @@ const Shortly = () => {
   );
 };
 
-// Shortly.propTypes = {
-//   className: PropTypes.string,
-// };
+
 
 export default Shortly;
