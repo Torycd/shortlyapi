@@ -2,18 +2,23 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
 const Showcontent = ({ response }) => {
+  const [copied, setCopied] = useState(false);
   const [displayedItems, setDisplayedItems] = useState(
     Object.keys(localStorage)
   );
-  let content = <p>Copy</p>;
 
   const handleDelete = (key) => {
     localStorage.removeItem(key);
     setDisplayedItems((prevItems) => prevItems.filter((item) => item !== key));
   };
+
   const handleCopyToClipboard = (text) => {
     navigator.clipboard.writeText(text);
-    content = <p>Copied</p>;
+    setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000); // Reset back to "Copy" after 2 seconds
   };
 
   useEffect(() => {
@@ -35,7 +40,7 @@ const Showcontent = ({ response }) => {
                 className="bg-[#00FFFF] px-4 py-2 text-white font-bold w-auto rounded-lg hover:opacity-30"
                 onClick={() => handleCopyToClipboard(localStorage.getItem(key))}
               >
-                {content}
+                {copied ? "Copied" : "Copy"}
               </span>
             </div>
           </div>
@@ -46,6 +51,7 @@ const Showcontent = ({ response }) => {
 };
 
 export default Showcontent;
+
 Showcontent.propTypes = {
   response: PropTypes.string,
 };
