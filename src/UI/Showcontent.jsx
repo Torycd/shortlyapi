@@ -5,6 +5,7 @@ const Showcontent = ({ response }) => {
   const [displayedItems, setDisplayedItems] = useState(
     Object.keys(localStorage)
   );
+  let content = <p>Copy</p>;
 
   const handleDelete = (key) => {
     localStorage.removeItem(key);
@@ -12,6 +13,7 @@ const Showcontent = ({ response }) => {
   };
   const handleCopyToClipboard = (text) => {
     navigator.clipboard.writeText(text);
+    content = <p>Copied</p>;
   };
 
   useEffect(() => {
@@ -30,10 +32,10 @@ const Showcontent = ({ response }) => {
             <div className="flex justify-between gap-3">
               <button onClick={() => handleDelete(key)}>Delete</button>
               <span
-                className="bg-[#00FFFF] px-4 py-2"
+                className="bg-[#00FFFF] px-4 py-2 text-white font-bold w-auto rounded-lg hover:opacity-30"
                 onClick={() => handleCopyToClipboard(localStorage.getItem(key))}
               >
-                Copy
+                {content}
               </span>
             </div>
           </div>

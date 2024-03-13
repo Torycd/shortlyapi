@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:flex font-bold justify-between gap-5 items-center">
           <button>Login</button>
-          <button className="bg-[#00FFFF] text-white font-bold px-7 py-2 rounded-full">
+          <button className="bg-[#00FFFF] text-white font-bold px-7 py-2 rounded-full hover:opacity-30">
             Sign Up
           </button>
         </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="flex flex-col font-bold justify-between w-full gap-8 items-center mb-5">
           <hr className="bg-white text-white w-[90%] font-bold px-6"/>
             <button>Login</button>
-            <button className="bg-[#00FFFF] text-white w-[90%] text-center font-bold px-6 py-3 rounded-3xl">
+            <button className="bg-[#00FFFF] text-white w-[90%] text-center font-bold px-6 py-3 rounded-3xl hover:opacity-30">
               Sign Up
             </button>
           </div>
