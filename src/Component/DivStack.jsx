@@ -2,9 +2,11 @@
 
 const DivStack = () => {
   return (
-    <div>
+    <section className="w-dvh">
+        <div className="mx-16 md:mx-32 text-[#181837] px-6 py-8">
 
-    </div>
+        </div>
+    </section>
   )
 }
 

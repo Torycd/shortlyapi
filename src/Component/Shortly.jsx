@@ -16,7 +16,7 @@ const Shortly = () => {
   }
 
   return (
-    <div className="w-dvh">
+    <section className="w-dvh">
       <div className="-translate-y-1/2 bg-[#421E47] px-6 py-8  rounded-lg mx-16 md:mx-32 z-20">
         <div className="w-full">
           <form
@@ -42,7 +42,7 @@ const Shortly = () => {
       </div>
       {/* <ViewComponent response={response} error={error} /> */}
       <Showcontent response={response} fetchData={fetchData} />
-    </div>
+    </section>
   );
 };
 

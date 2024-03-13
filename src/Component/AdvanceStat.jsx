@@ -1,6 +1,6 @@
 const AdvanceStat = () => {
   return (
-    <div className="w-dvh">
+    <section className="w-dvh">
       <div className="mx-16 md:mx-32 text-[#181837] px-6 py-8">
         <h2 className="text-center font-bold text-3xl">
           Advanced Statistics
@@ -10,7 +10,7 @@ const AdvanceStat = () => {
           Statistics Dashboard
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
