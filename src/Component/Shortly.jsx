@@ -2,7 +2,7 @@
 import { useState } from "react";
 import useHttp from "./Use-https";
 // import ViewComponent from "./ViewComponent";
-import ShowComponent from "./showContent";
+import ShowContent from "./showContent";
 
 const Shortly = () => {
   const [urlInput, setUrlInput] = useState("");
@@ -42,7 +42,7 @@ const Shortly = () => {
         </div>
       </div>
       {/* <ViewComponent response={response} error={error} /> */}
-      <ShowComponent response={response} error={error} />
+      <ShowContent response={response} error={error} />
     </div>
   );
 };

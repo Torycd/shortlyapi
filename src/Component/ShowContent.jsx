@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClipboard } from "@fortawesome/free-solid-svg-icons";
 
-const ShowComponent = ({ response }) => {
+const ShowContent = ({ response }) => {
   const [displayedItems, setDisplayedItems] = useState(
     Object.keys(localStorage)
   );
@@ -43,9 +43,9 @@ const ShowComponent = ({ response }) => {
   );
 };
 
-export default ShowComponent;
+export default ShowContent;
 
-ShowComponent.propTypes = {
+ShowContent.propTypes = {
   response: PropTypes.string,
   error: PropTypes.string,
 };
