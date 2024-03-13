@@ -4,10 +4,10 @@ import Showcontent from "../UI/Showcontent";
 
 const Shortly = () => {
   const [urlInput, setUrlInput] = useState("");
-  const { response, error, fetchData } = useHttp();
+  const { response, fetchData } = useHttp();
 
   function handleFormSubmit(event) {
-    event.preventDefault()
+    event.preventDefault();
     const fetchUrl = `https://tinyurl.com/api-create.php?url=${encodeURIComponent(
       urlInput
     )}`;
@@ -41,7 +41,7 @@ const Shortly = () => {
         </div>
       </div>
       {/* <ViewComponent response={response} error={error} /> */}
-      <Showcontent response={response} error={error} />
+      <Showcontent response={response} fetchData={fetchData} />
     </div>
   );
 };

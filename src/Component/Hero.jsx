@@ -16,7 +16,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="right-0">
+      <div className="right-0 content-stretch">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className=""
