@@ -6,7 +6,8 @@ const Shortly = () => {
   const [urlInput, setUrlInput] = useState("");
   const { response, error, fetchData } = useHttp();
 
-  function handleFormSubmit() {
+  function handleFormSubmit(event) {
+    event.preventDefault()
     const fetchUrl = `https://tinyurl.com/api-create.php?url=${encodeURIComponent(
       urlInput
     )}`;
