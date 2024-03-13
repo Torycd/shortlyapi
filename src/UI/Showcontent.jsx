@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClipboard } from "@fortawesome/free-solid-svg-icons";
 
-const ViewComponent = ({ response }) => {
+const Showcontent = ({ response }) => {
   const [displayedItems, setDisplayedItems] = useState(
     Object.keys(localStorage)
   );
@@ -33,7 +33,13 @@ const ViewComponent = ({ response }) => {
             <div className="flex justify-between gap-3">
               <button onClick={() => handleDelete(key)}>Delete</button>
               <span>
-                <FontAwesomeIcon icon={faClipboard} className="bg-white" onClick={() => handleCopyToClipboard(localStorage.getItem(key))}/>
+                <FontAwesomeIcon
+                  icon={faClipboard}
+                  className="bg-white"
+                  onClick={() =>
+                    handleCopyToClipboard(localStorage.getItem(key))
+                  }
+                />
               </span>
             </div>
           </div>
@@ -43,9 +49,8 @@ const ViewComponent = ({ response }) => {
   );
 };
 
-export default ViewComponent;
-
-ViewComponent.propTypes = {
+export default Showcontent
+Showcontent.propTypes = {
   response: PropTypes.string,
   error: PropTypes.string,
 };

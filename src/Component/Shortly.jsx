@@ -1,8 +1,6 @@
-
 import { useState } from "react";
 import useHttp from "./Use-https";
-// import ViewComponent from "./ViewComponent";
-import ShowContent from "./showContent";
+import Showcontent from "../UI/Showcontent";
 
 const Shortly = () => {
   const [urlInput, setUrlInput] = useState("");
@@ -42,11 +40,9 @@ const Shortly = () => {
         </div>
       </div>
       {/* <ViewComponent response={response} error={error} /> */}
-      <ShowContent response={response} error={error} />
+      <Showcontent response={response} error={error} />
     </div>
   );
 };
-
-
 
 export default Shortly;
