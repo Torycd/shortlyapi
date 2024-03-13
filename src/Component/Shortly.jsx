@@ -3,19 +3,17 @@ import { useState } from "react";
 import useHttp from "./Use-https";
 import ViewComponent from "./ViewComponent";
 
-
 const Shortly = () => {
   const [urlInput, setUrlInput] = useState("");
   const { response, error, fetchData } = useHttp();
 
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
+  function handleFormSubmit() {
     const fetchUrl = `https://tinyurl.com/api-create.php?url=${encodeURIComponent(
       urlInput
     )}`;
     fetchData(fetchUrl);
-    setUrlInput("")
-  };
+    setUrlInput("");
+  }
 
   return (
     <div className="w-dvh">
@@ -41,7 +39,6 @@ const Shortly = () => {
             </button>
           </form>
         </div>
-        
       </div>
       <ViewComponent response={response} error={error} />
     </div>
