@@ -1,7 +1,8 @@
 
 import { useState } from "react";
 import useHttp from "./Use-https";
-import ViewComponent from "./ViewComponent";
+// import ViewComponent from "./ViewComponent";
+import ShowComponent from "./showContent";
 
 const Shortly = () => {
   const [urlInput, setUrlInput] = useState("");
@@ -40,7 +41,8 @@ const Shortly = () => {
           </form>
         </div>
       </div>
-      <ViewComponent response={response} error={error} />
+      {/* <ViewComponent response={response} error={error} /> */}
+      <ShowComponent response={response} error={error} />
     </div>
   );
 };
