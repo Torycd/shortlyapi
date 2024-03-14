@@ -15,7 +15,7 @@ const DivStack = () => {
             </div>
             <h2 className="font-extrabold text-xl">Brand Recognition</h2>
             <p className="text-center md:text-left">
-              Boost your brand recognition with each click. Generic links don’t
+              Boost your brand recognition with each click. Generic links dont
               mean a thing. Branded links help instil confidence in your
               content.
             </p>
