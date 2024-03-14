@@ -2,6 +2,7 @@ import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero";
 import MainSection from "./Component/MainSection";
 import Boost from "./Component/Boost";
+import Footer from "./Component/Footer";
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
       <Hero/>
       <MainSection/>
       <Boost/>
-      
+      <Footer/>
     </div>
   )
 }
