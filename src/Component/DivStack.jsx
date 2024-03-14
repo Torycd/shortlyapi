@@ -4,7 +4,7 @@ const DivStack = () => {
       <div className="mx-16 md:mx-32 text-[#181837] z-30 mt-5">
         <div className="grid md:grid-cols-3 gap-2 md:gap-40">
           {/* item 1 */}
-          <div className="bg-white px-4">
+          <div className="bg-white px-4 rounded-lg">
             <div className="p-2 -translate-y-1/2 rounded-full w-20 h-20 flex items-center justify-center bg-[#181837]">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
                 <path
@@ -18,7 +18,7 @@ const DivStack = () => {
             <p></p>
           </div>
           {/* item 2 */}
-          <div className="bg-white px-4">
+          <div className="bg-white px-4 rounded-lg">
             <div className="p-2 -translate-y-1/2 rounded-full w-20 h-20 flex items-center justify-center bg-[#181837]">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
                 <path
@@ -31,7 +31,7 @@ const DivStack = () => {
             <p></p>
           </div>
           {/* item 3 */}
-          <div className="bg-white px-4">
+          <div className="bg-white px-4 rounded-lg">
             <div className="p-2 -translate-y-1/2 rounded-full w-20 h-20 flex items-center justify-center bg-[#181837]">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
                 <path
