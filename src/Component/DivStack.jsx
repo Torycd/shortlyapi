@@ -13,7 +13,7 @@ const DivStack = () => {
                 />
               </svg>
             </div>
-            <h2 className="font-bold">Brand Recognition</h2>
+            <h2 className="font-extrabold text-xl">Brand Recognition</h2>
             <p className="text-center md:text-left">
               Boost your brand recognition with each click. Generic links don’t
               mean a thing. Branded links help instil confidence in your
@@ -21,7 +21,7 @@ const DivStack = () => {
             </p>
           </div>
           {/* item 2 */}
-          <div className="bg-white px-4 rounded-lg mt-10 md:mt-0 flex flex-col items-center md:items-start pb-4">
+          <div className="bg-white px-4 rounded-lg mt-10 md:mt-10 flex flex-col items-center md:items-start pb-4">
             <div className="p-2 -translate-y-1/2 rounded-full w-20 h-20 flex items-center justify-center bg-[#181837]">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
                 <path
@@ -30,7 +30,7 @@ const DivStack = () => {
                 />
               </svg>
             </div>
-            <h2 className="font-bold">Detailed Records</h2>
+            <h2 className="font-extrabold text-xl">Detailed Records</h2>
             <p className="text-center md:text-left">
               Gain insights into who is clicking your links. Knowing when and
               where people engage with your content helps inform better
@@ -38,7 +38,7 @@ const DivStack = () => {
             </p>
           </div>
           {/* item 3 */}
-          <div className="bg-white px-4 rounded-lg  mt-10 md:mt-0 flex flex-col items-center md:items-start pb-4">
+          <div className="bg-white px-4 rounded-lg  mt-10 md:mt-20 flex flex-col items-center md:items-start pb-4">
             <div className="p-2 -translate-y-1/2 rounded-full w-20 h-20 flex items-center justify-center bg-[#181837]">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
                 <path
@@ -47,7 +47,7 @@ const DivStack = () => {
                 />
               </svg>
             </div>
-            <h2 className="font-bold">Fully Customizable</h2>
+            <h2 className="font-extrabold text-xl">Fully Customizable</h2>
             <p className="text-center md:text-left">
               Improve brand awareness and content discoverability through
               customizable links, supercharging audience engagement.
