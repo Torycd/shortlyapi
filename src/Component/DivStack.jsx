@@ -14,11 +14,15 @@ const DivStack = () => {
               </svg>
             </div>
 
-            <h2>lorem ipsum dior silt</h2>
-            <p></p>
+            <h2>Brand Recognition</h2>
+            <p>
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
           </div>
           {/* item 2 */}
-          <div className="bg-white px-4 rounded-lg">
+          <div className="bg-white px-4 rounded-lg mt-10 md:mt-0">
             <div className="p-2 -translate-y-1/2 rounded-full w-20 h-20 flex items-center justify-center bg-[#181837]">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
                 <path
@@ -27,11 +31,15 @@ const DivStack = () => {
                 />
               </svg>
             </div>
-            <h2></h2>
-            <p></p>
+            <h2>Detailed Records</h2>
+            <p>
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
+            </p>
           </div>
           {/* item 3 */}
-          <div className="bg-white px-4 rounded-lg">
+          <div className="bg-white px-4 rounded-lg  mt-10 md:mt-0">
             <div className="p-2 -translate-y-1/2 rounded-full w-20 h-20 flex items-center justify-center bg-[#181837]">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
                 <path
@@ -40,8 +48,11 @@ const DivStack = () => {
                 />
               </svg>
             </div>
-            <h2></h2>
-            <p></p>
+            <h2>Fully Customizable</h2>
+            <p>
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
+            </p>
           </div>
         </div>
       </div>
