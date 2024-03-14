@@ -32,7 +32,7 @@ const Shortly = () => {
               onChange={(e) => setUrlInput(e.target.value)}
             />
             <button
-              className="w-uto md:w-[15%] bg-[#00FFFF] text-white text-xl font-bold px-9 py-2 rounded-lg hover:opacity-90"
+              className="w-auto md:w-[15%] bg-[#00FFFF] text-white text-xl font-bold px-9 py-2 rounded-lg hover:opacity-90"
               type="submit"
             >
               Shorten It!
