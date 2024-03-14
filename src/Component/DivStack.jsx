@@ -1,7 +1,7 @@
 const DivStack = () => {
   return (
     <section className="w-dvh">
-      <div className="mx-16 md:mx-32 text-[#181837] z-30 mt-5">
+      <div className="mx-10 md:mx-32 text-[#181837] z-30 mt-5">
         <div className="grid md:grid-cols-3 gap-2 md:gap-40">
           {/* item 1 */}
           <div className="bg-white px-4 rounded-lg">

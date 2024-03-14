@@ -1,7 +1,7 @@
 const AdvanceStat = () => {
   return (
     <section className="w-dvh">
-      <div className="mx-16 md:mx-32 text-[#181837] px-6 py-8">
+      <div className="mx-10 md:mx-32 text-[#181837] px-6 py-8">
         <h2 className="text-center font-bold text-3xl">
           Advanced Statistics
         </h2>
