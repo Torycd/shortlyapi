@@ -9,7 +9,7 @@ const Footer = () => {
         </div>
         <div className="md:w-[70%] grid md:grid-cols-4 text-center gap-2 md:text-left">
           <div>
-            <h2 className="mb-5 font-bold"> Features</h2>
+            <h2 className="mb-2 font-bold"> Features</h2>
             <ul className="opacity-80">
               <li>Link Shortening</li>
               <li>Branded Links</li>
@@ -17,7 +17,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-5 font-bold">Resources</h2>
+            <h2 className="mb-2 font-bold">Resources</h2>
             <ul className="opacity-80">
               <li>Blog</li>
               <li>Developers</li>
@@ -25,7 +25,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-5 font-bold">Company</h2>
+            <h2 className="mb-2 font-bold">Company</h2>
             <ul className="opacity-80">
               <li>About</li>
               <li>Our Team</li>
@@ -33,8 +33,8 @@ const Footer = () => {
               <li></li>
             </ul>
           </div>
-          <div className="mt-5 md:mt-0">
-            <ul className="flex justify-between">
+          <div className="mt-2 md:mt-0">
+            <ul className="flex justify-around">
               <li>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                   <path
