@@ -30,16 +30,18 @@ const Navbar = () => {
       {/* dropdown */}
       <div
         className={
-          !nav ? "hidden" : "md:hidden absolute w-full text-white px-8 text-xl font-bold"
+          !nav
+            ? "hidden"
+            : "md:hidden absolute w-full text-white px-8 text-xl font-bold"
         }
       >
         <ul className="bg-[#421E47] w-full items-center flex justify-center text-white flex-col rounded-3xl">
-          <li className="my-10">Features</li>
+          <li className="mr-10">Features</li>
           <li>Pricing</li>
-          <li className="my-10">Resources</li>
-          
+          <li className="ml-10">Resources</li>
+
           <div className="flex flex-col font-bold justify-between w-full gap-8 items-center mb-5">
-          <hr className="bg-white text-white w-[90%] font-bold px-6"/>
+            <hr className="bg-white text-white w-[90%] font-bold px-6" />
             <button>Login</button>
             <button className="bg-[#00FFFF] text-white w-[90%] text-center font-bold px-6 py-3 rounded-3xl hover:opacity-30">
               Sign Up
@@ -48,7 +50,6 @@ const Navbar = () => {
         </ul>
       </div>
     </div>
-    
   );
 };
 
