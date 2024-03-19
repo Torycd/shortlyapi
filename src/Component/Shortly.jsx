@@ -2,16 +2,20 @@ import { useState } from "react";
 import useHttp from "./Use-https";
 import Showcontent from "../UI/Showcontent";
 
+
 const Shortly = () => {
   const [urlInput, setUrlInput] = useState("");
   const { response, fetchData } = useHttp();
+  const [isloading, setIsLoading] = useState(false)
 
-  function handleFormSubmit(event) {
+  async function handleFormSubmit(event) {
     event.preventDefault();
+    setIsLoading(true)
     const fetchUrl = `https://tinyurl.com/api-create.php?url=${encodeURIComponent(
       urlInput
     )}`;
-    fetchData(fetchUrl);
+    await fetchData(fetchUrl);
+    setIsLoading(false)
     setUrlInput("");
   }
 
@@ -41,7 +45,7 @@ const Shortly = () => {
         </div>
       </div>
       {/* <ViewComponent response={response} error={error} /> */}
-      <Showcontent response={response} fetchData={fetchData} />
+      <Showcontent response={response} loading="Content is loading" isloading={isloading} fetchData={fetchData}  />
     </section>
   );
 };

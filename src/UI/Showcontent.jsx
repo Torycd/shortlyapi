@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-const Showcontent = ({ response }) => {
+const Showcontent = ({ response, isLoading, loading }) => {
   const [copied, setCopied] = useState(false);
   const [displayedItems, setDisplayedItems] = useState(
     Object.keys(localStorage)
@@ -28,6 +28,7 @@ const Showcontent = ({ response }) => {
   return (
     <div className="w-dvh  mx-16 md:mx-32 z-20">
       <div className="w-full flex flex-col gap-2">
+      {isLoading && <p className="text-black bg-white rounded-lg px-6 py-8">{loading}</p>}
         {displayedItems.map((key) => (
           <div
             key={key}
@@ -54,4 +55,6 @@ export default Showcontent;
 
 Showcontent.propTypes = {
   response: PropTypes.string,
+  isLoading: PropTypes.bool,
+  loading: PropTypes.string
 };

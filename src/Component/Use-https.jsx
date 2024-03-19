@@ -6,7 +6,7 @@ const useHttp = () => {
 
   const fetchData = async (url) => {
     try {
-      console.log(url)
+      // console.log(url)
       const response = await fetch(url, {method: "POST"});
       const data = await response.text();
       setResponse(data);
