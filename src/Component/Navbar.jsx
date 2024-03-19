@@ -36,9 +36,9 @@ const Navbar = () => {
         }
       >
         <ul className="bg-[#421E47] w-full items-center flex justify-center text-white flex-col rounded-3xl">
-          <li className="mr-10">Features</li>
+          <li className="my-10">Features</li>
           <li>Pricing</li>
-          <li className="ml-10">Resources</li>
+          <li className="my-10">Resources</li>
 
           <div className="flex flex-col font-bold justify-between w-full gap-8 items-center mb-5">
             <hr className="bg-white text-white w-[90%] font-bold px-6" />
